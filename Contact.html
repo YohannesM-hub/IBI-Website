@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — International Bible Institute</title>
+<meta name="description" content="Get in touch with International Bible Institute, Addis Ababa, Ethiopia.">
+<link rel="icon" type="image/png" href="Pictures/IBI Logo circle.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="IBI Logo.jpeg" alt="International Bible Institute crest">
+      <span class="brand-text"><strong>International Bible Institute</strong><span>Addis Ababa, Ethiopia</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Visionmission.html">Vision &amp; Mission</a></li>
+      <li><a href="Statementoffaith.html">Statement of Faith</a></li>
+      <li><a href="Programs.html">Programs</a></li>
+      <li><a href="Faqs.html">FAQs</a></li>
+      <li><a href="Contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <h1>We'd love to hear from you</h1>
+      <p>Questions about admissions, programs, or visiting our campus in Addis Ababa? Reach out — our team responds personally to every message.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Reach us</p>
+        <h2>Contact information</h2>
+        <ul class="info-list">
+          <li><span class="k">Location</span>Addis Ababa, Ethiopia</li>
+          <li><span class="k">Postal address</span>P.O. Box 19068</li>
+          <li><span class="k">Email</span>girmaibi@gmail.com</li>
+          <li><span class="k">Phone</span>+251 91 155 4791</li>
+          <li><span class="k">Phone (alt.)</span>+251 91 166 8970</li>
+          <li><span class="k">Office hours</span>Monday – Friday, 8:00 AM – 5:00 PM</li>
+        </ul>
+        <p class="map-note" style="margin-top:1.6rem;">Visitors are welcome by appointment — please contact us ahead of your visit.</p>
+      </div>
+
+      <div>
+        <p class="eyebrow">Send a message</p>
+        <h2>Get in touch</h2>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="topic">I'm asking about</label>
+            <select id="topic" name="topic">
+              <option>Admissions</option>
+              <option>Programs</option>
+              <option>Fees</option>
+              <option>General inquiry</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Send message</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="IBI Logo.jpeg" alt="International Bible Institute crest">
+        <p><strong style="color:#fff;">International Bible Institute</strong><br>Educating the whole man — spirit, mind, and body — in Addis Ababa, Ethiopia.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Visionmission.html">Vision &amp; Mission</a></li>
+          <li><a href="Statementoffaith.html">Statement of Faith</a></li>
+          <li><a href="Programs.html">Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>More</h5>
+        <ul>
+          <li><a href="Faqs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>P.O. Box 19068, Addis Ababa, Ethiopia</li>
+          <li>girmaibi@gmail.com</li>
+          <li>+251 91 155 4791</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> International Bible Institute, Addis Ababa</span>
+      <span>Educating the Whole Man — Spirit · Mind · Body</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
