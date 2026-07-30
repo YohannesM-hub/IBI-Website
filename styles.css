@@ -751,13 +751,34 @@
   .focus-list h4{ margin:0 0 .2rem; font-size:1.02rem; color:var(--navy-deep); }
   .focus-list p{ margin:0; color:var(--ink-soft); font-size:.96rem; }
 
-  /* Leadership */
+  /* Leadership
+     Two explicit rows: President + Dean on top (larger cards, since
+     there are only two), the remaining V/Deans below (smaller cards).
+     Each row is its own centered flex line, stacked in a column, so
+     the split is guaranteed regardless of how many people are in
+     each row — not dependent on wrapping width like a single grid. */
   .people-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    display:flex;
+    flex-direction:column;
     gap:var(--gap);
   }
+  .leadership-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:var(--gap);
+  }
+  .leadership-row-top .person{
+    flex:1 1 280px;
+    max-width:320px;
+  }
+  .leadership-row-bottom .person{
+    flex:1 1 220px;
+    max-width:260px;
+  }
   .person{
+    flex:1 1 220px;
+    max-width:260px;
     background:var(--white);
     border:1px solid rgba(28,42,99,.10);
     overflow:hidden;
@@ -1114,9 +1135,14 @@
 
     /* Grids collapse to one column */
     .card-grid,
-    .people-grid,
     .stats,
     .footer-grid{ grid-template-columns:1fr !important; }
+
+    /* Leadership cards stack full-width on phones */
+    .leadership-row .person{
+      flex-basis:100%;
+      max-width:400px;
+    }
 
     .stat{ padding-block:.4rem; border-bottom:1px solid rgba(255,255,255,.12); padding-bottom:1rem; }
     .stat:last-child{ border-bottom:none; }
